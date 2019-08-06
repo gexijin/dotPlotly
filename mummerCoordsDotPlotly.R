@@ -213,7 +213,7 @@ if (opt$similarity) {
       panel.grid.major.y = element_blank(),
       panel.grid.minor.y = element_blank(),
       panel.grid.minor.x = element_blank(),
-      axis.text.y = element_text(size = 4, angle = 15)
+      axis.text.y = element_text(size = 12, angle = 15)
     ) +
     scale_y_continuous(breaks = yTickMarks, labels = substr(levels(alignments$queryID), start = 1, stop = 20)) +
     { if(opt$h_lines){ geom_hline(yintercept = yTickMarks,
@@ -258,7 +258,7 @@ if (opt$similarity) {
       panel.grid.major.y = element_blank(),
       panel.grid.minor.y = element_blank(),
       panel.grid.minor.x = element_blank(),
-      axis.text.y = element_text(size = 4, angle = 15)
+      axis.text.y = element_text(size = 12, angle = 15)
     ) +
     scale_y_continuous(breaks = yTickMarks, labels = substr(levels(alignments$queryID), start = 1, stop = 20)) +
     { if(opt$h_lines){ geom_hline(yintercept = yTickMarks,
